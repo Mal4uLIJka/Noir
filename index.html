@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
+    <script defer src="./scripts/simple-adaptive-slider.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bc6f55be9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir - особая фотостудия</title>
+</head>
+<body>
+    <main>
+        <header>
+            <ul class="nav pc" id="menu">
+                <li><a href="#" id="who">Кто мы</a></li>
+                <li><a href="#" id="action">Съёмка</a></li>
+                <li><a href="#" id="photographer">Фотографы</a></li>
+                <li id="logo"><img src="./img/Noir.svg" alt="Noir_logo" class="logo"></li>
+                <li><a href="#" id="examp">Примеры</a></li>
+                <li><a href="#" id="studio">Студия</a></li>
+                <li><a href="#" id="order">Заказать</a></li>
+            </ul>
+            <ul class="nav mob">
+                <li><img src="./img/Noir.svg" alt="Noir_logo" class="logo"></li>
+                <li><div class="burger"><span onclick="menu_bar()" id="menu__btn"><i class="fa-solid fa-bars fa-xl"></i></span></div></li>
+            </ul>
+        </header>
+
+        <section class="banner"></section>
+
+        <section class="who">
+            <h2>Кто же мы такие?</h2>
+            <p>
+                Добро пожаловать в мир таинственного и увлекательного искусства – мир фотостудии "Noir". Мы – команда творческих энтузиастов, объединенных любовью к стилю нуар и стремлением запечатлеть ваше восхитительное внутреннее мироощущение.<br>
+               <br>
+               Наша команда профессиональных фотографов, стилистов и визажистов готова подчеркнуть вашу уникальность, добавив в каждую фотографию долю загадки и стиля. Мы не просто фиксируем моменты – мы создаем произведения искусства, которые будут с вами вечно.
+               Выберите "Noir" – выберите стиль, элегантность и неповторимость. Давайте создадим вместе историю вашего образа в стиле нуар – историю, которая будет жить в каждом кадре, напоминая о вашей уникальности и страсти к жизни.<br>
+               <br>
+               Каждый проект в нашей студии начинается с тщательного обсуждения идеи с вами. Мы стремимся понять вашу индивидуальность и ваши предпочтения, чтобы каждая фотография стала отражением вашей уникальной эстетики. Наша цель – не просто создать красивые снимки, а передать вашу собственную историю, пропитанную духом нуар.<br>
+               <br>
+               Присоединитесь к "Noir" – месту, где каждая фотография становится произведением искусства. Давайте вместе погрузимся в мир нуар и создадим визуальное воплощение вашей уникальной жизненной палитры. Позвольте нам сделать ваш опыт фотосъемки незабываемым и запечатлеть вашу историю в самых красочных тонах чёрно-белого мира.
+            </p>
+        </section>
+
+        <section class="action">
+            <h2>Как происходит съёмка?</h2>
+            <div class="text__photo">
+                <p>
+                    Наши фотосессии в студии "Noir" – это уникальное погружение в мир нуар и стиля, где каждая деталь заботливо продумана для создания великолепного визуального опыта. Вот как происходит съемка в нашей студии:<br>
+                    <br>
+                    <strong>Консультация:</strong><br>
+                    Предварительное обсуждение ваших пожеланий и идей для создания уникальной концепции.<br>
+                    <br>
+                    <strong>Подготовка к съемке:</strong><br>
+                    Команда стилистов и визажистов тщательно готовит ваш индивидуальный образ.<br>
+                    <br>
+                    <strong>Выбор обстановки:</strong><br>
+                    Избираем фоны и обстановки, соответствующие стилю нуар.<br>
+                    <br>
+                    <strong>Работа с освещением:</strong><br>
+                    Мастерское использование света и тени для создания драматического эффекта.<br>
+                    <br>
+                    <strong>Процесс съемки:</strong><br>
+                    Создание комфортной атмосферы для зафиксирования естественной эмоциональной выразительности.<br>
+                    <br>
+                    <strong>Обработка и ретушь:</strong><br>
+                    Тщательная обработка изображений для подчеркивания нуарного стиля и художественного вида.<br>
+                    <br>
+                    <strong>Предоставление фотографий:</strong><br>
+                    Предоставление высококачественных фотографий, ставших частью вашей уникальной истории в стиле нуар.<br>
+                </p>
+                <div class="model1" alt="Фото модели в стиле нуар"></div>
+            </div>
+        </section>
+
+        <section class="photographer">
+            <h2>Наши фотографы</h2>
+            <div class="flex__box pc">
+                <article class="card"><img src="./img/Andrew_sqr.png" alt="Андрей Фролов"><div class="flex__box text"><h3>Андрей Фролов</h3><p><i class="fa-brands fa-instagram"></i> froloov</p></div></article>
+                <article class="card"><img src="./img/Anya_sqr.png" alt="Анна Чернова"><div class="flex__box text"><h3>Аня Чернова</h3><p><i class="fa-brands fa-instagram"></i> ann.chernova</p></div></article>
+                <article class="card"><img src="./img/Nastya_sqr.png" alt="Анастасия Шендо"><div class="flex__box text"><h3>Анастасия Шендо</h3><p><i class="fa-brands fa-instagram"></i> nastyo</div></p></article>
+            </div>
+
+            <div class="slider" id="slider-1">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item"><article class="card"><img src="./img/Andrew_sqr.png" alt="Андрей Фролов"><div class="flex__box text"><h3>Андрей Фролов</h3><p><i class="fa-brands fa-instagram"></i> froloov</p></div></article></div>
+                        <div class="slider__item"><article class="card"><img src="./img/Anya_sqr.png" alt="Анна Чернова"><div class="flex__box text"><h3>Аня Чернова</h3><p><i class="fa-brands fa-instagram"></i> ann.chernova</p></div></article></div>
+                        <div class="slider__item"><article class="card"><img src="./img/Nastya_sqr.png" alt="Анастасия Шендо"><div class="flex__box text"><h3>Анастасия Шендо</h3><p><i class="fa-brands fa-instagram"></i> nastyo</div></p></article></div>
+                    </div>
+                </div>
+
+                <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+            </div>
+        </section>
+
+        <section class="examp">
+            <h2>Примеры нашей работы</h2>
+            <div class="slider" id="slider-2">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item"><div class="exp a"></div></div>
+                        <div class="slider__item"><div class="exp b"></div></div>
+                        <div class="slider__item"><div class="exp c"></div></div>
+                    </div>
+                </div>
+
+                <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+            </div>
+        </section>
+
+        <section class="studio">
+            <h2>Наша студия и местоположение</h2>
+            <div class="text__photo">
+                <div class="stud"></div>
+                <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.3801759623818!2d27.607679932963944!3d53.92249251688635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sde!4v1701177003092!5m2!1sru!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </section>
+
+        <section class="order">
+            <h2>Заказ наших услуг</h2>
+            <div class="text__photo">
+                <form action="#" method="post" id="photo_order">
+                    <input type="text" placeholder="Ваше имя" form="photo_order">
+                    <input type="text" placeholder="Ваша фамилия" form="photo_order">
+                    <input type="text" placeholder="Ваше отчество" form="photo_order">
+                    <input type="email" placeholder="Ваше e-mail" form="photo_order">
+                    <input type="tel" placeholder="Ваш телефон" form="photo_order">
+                    <input type="submit" value="Заказать фотосессию" form="photo_order">
+                </form>
+                <div class="orderp"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="line"></div>
+            <p id="footer">
+                Правила пользования © 2023 SunExp Ltd.
+            </p>
+        </footer>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
