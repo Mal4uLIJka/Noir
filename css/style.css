@@ -241,6 +241,10 @@ footer p{
     display: none;
 }
 
+.flex__box.text{
+    justify-content: space-around;
+}
+
 @media screen and (max-width: 1023px) {
     .text__photo{
         grid-template: 1fr 1fr / 1fr;
