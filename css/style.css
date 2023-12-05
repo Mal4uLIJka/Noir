@@ -21,6 +21,10 @@ a{
     color: inherit;
 }
 
+a:hover{
+    color: #494949;
+}
+
 h2{
     font-size: 32px;
     margin: 0;
@@ -68,10 +72,6 @@ header{
     width: 100%;
 }
 
-.nav li:hover{
-    color: #494949;
-}
-
 .banner{
     background: url(../img/banner.jpg) no-repeat;
     background-position: center;
@@ -83,13 +83,13 @@ header{
     padding: 0;
 }
 
-.text__photo{
+.smth__smth{
     display: grid;
     grid-template: 1fr / 1fr 1fr;
     grid-gap: 30px;
 }
 
-.model1{
+.model{
     background: url(../img/model1.jpg) no-repeat;
     background-size: cover;
     background-position: center;

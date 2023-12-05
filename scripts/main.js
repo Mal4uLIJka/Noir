@@ -1,25 +1,20 @@
 function foot(x) {
     if (x.matches) { 
-        document.getElementById('footer').innerHTML = "Правила пользования<br>© 2023 NoirExp Ltd.";
+        document.getElementById('footer').innerHTML = "<a href='#'>Правила пользования</a><br>© 2023 NoirExp Ltd.";
     } else {
-        document.getElementById('footer').innerHTML = "Правила пользования © 2023 NoirExp Ltd.";
+        document.getElementById('footer').innerHTML = "<a href='#'>Правила пользования</a> © 2023 Noir Ltd.";
     }
   }
 
 document.addEventListener('DOMContentLoaded', function () {
-    // инициализация слайдера
-    new SimpleAdaptiveSlider('#slider-1', {
-        swipe: true,
-     });
-
-    new SimpleAdaptiveSlider('#slider-2', {
-        swipe: true,
-     });
+    new SimpleAdaptiveSlider('#slider-1', { swipe: true, });
+    new SimpleAdaptiveSlider('#slider-2', { swipe: true, });
 });
   
-let footer = window.matchMedia("(max-width: 447px)");
+let footer = window.matchMedia("(max-width: 440px)");
 foot(footer);
 footer.addListener(foot);
+
 
 let menu_status = false;
 let menu__btn = document.getElementById('menu__btn');
@@ -46,118 +41,42 @@ const $order = document.querySelector('#order');
 
 $who.onclick = function(e){
     e.preventDefault();
-    scrollBy({ top: 550, behavior: 'smooth' });
-}
+    let c = document.querySelector('.who').getBoundingClientRect();
+    scrollBy({ top: c.top - (window.innerHeight / 4), behavior: 'smooth' });
+    menu_bar();
+};
 
 $action.onclick = function(e){
     e.preventDefault();
-    scrollBy({ top: 1130, behavior: 'smooth' });
+    let c = document.querySelector('.action').getBoundingClientRect();
+    scrollBy({ top: c.top - (window.innerHeight / 4), behavior: 'smooth' });
+    menu_bar();
 }
 
 $photographer.onclick = function(e){
     e.preventDefault();
-    scrollBy({ top: 1750, behavior: 'smooth' });
+    let c = document.querySelector('.photographer').getBoundingClientRect();
+    scrollBy({ top: c.top - (window.innerHeight / 4), behavior: 'smooth' });
+    menu_bar();
 }
 
 $examp.onclick = function(e){
     e.preventDefault();
-    scrollBy({ top: 2385, behavior: 'smooth' });
+    let c = document.querySelector('.examp').getBoundingClientRect();
+    scrollBy({ top: c.top - (window.innerHeight / 4), behavior: 'smooth' });
+    menu_bar();
 }
 
 $studio.onclick = function(e){
     e.preventDefault();
-    scrollBy({ top: 3080, behavior: 'smooth' });
+    let c = document.querySelector('.studio').getBoundingClientRect();
+    scrollBy({ top: c.top - (window.innerHeight / 4), behavior: 'smooth' });
+    menu_bar();
 }
 
 $order.onclick = function(e){
     e.preventDefault();
-    scrollBy({ top: 4000, behavior: 'smooth' });
+    let c = document.querySelector('.order').getBoundingClientRect();
+    scrollBy({ top: c.top - (window.innerHeight / 4), behavior: 'smooth' });
+    menu_bar();
 }
-
-function scroll1023(x) {
-    if (x.matches){
-        $who.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 580, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $action.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 1200, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $photographer.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 2200, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $examp.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 3130, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $studio.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 3830, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $order.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 4860, behavior: 'smooth' });
-            menu_bar();
-        }
-    }
-}
-
-function scroll640(x) {
-    if (x.matches){
-        $who.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 580, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $action.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 1800, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $photographer.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 3100, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $examp.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 3600, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $studio.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 4150, behavior: 'smooth' });
-            menu_bar();
-        }
-        
-        $order.onclick = function(e){
-            e.preventDefault();
-            scrollBy({ top: 4900, behavior: 'smooth' });
-            menu_bar();
-        }
-    }
-}
-
-let Media1023 = window.matchMedia('(max-width: 1023px)');
-scroll1023(Media1023);
-Media1023.addListener(scroll1023);
-
-let Media640 = window.matchMedia('(max-width: 640px)');
-scroll640(Media640);
-Media640.addListener(scroll640);
